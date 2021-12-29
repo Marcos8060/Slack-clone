@@ -1,10 +1,23 @@
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
+require('firebase/auth')
+
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyBW2lRS3TfeNloj4ZFfS7-NJi2hCexV8QY",
-    authDomain: "slack-clone-6d43a.firebaseapp.com",
-    projectId: "slack-clone-6d43a",
-    storageBucket: "slack-clone-6d43a.appspot.com",
-    messagingSenderId: "520789906773",
-    appId: "1:520789906773:web:ee16aaf11affc59847cbdc",
-    measurementId: "G-H18JF3TFTE"
-  };
+  apiKey: "AIzaSyB7VfWyoZ3nBfaq1RkX_Xo1NrY1n-DmF3k",
+  authDomain: "slack-clone-9e062.firebaseapp.com",
+  projectId: "slack-clone-9e062",
+  storageBucket: "slack-clone-9e062.appspot.com",
+  messagingSenderId: "641941541303",
+  appId: "1:641941541303:web:c446e91ee4b9d41fcb1832",
+  measurementId: "G-F3XDKXFM6X"
+};
+
+  const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+  const db = firebaseApp.firestore();
+  // const Auth = firebase.auth();
+  // const provider = new firebase.auth.GoogleAuthProvider();
+
+  export default db; 
+  // export  { provider,Auth};
